@@ -7,7 +7,10 @@ import {createSunflower} from "./seeds/sunflower.js"
 import {createWheat} from "./seeds/wheat.js"
 import {addPlant} from "./field.js"
 import {usePlant} from "./field.js"
+import { plantSeeds } from "./tractor.js"
 
 const yearlyPlan = createPlan();
+plantSeeds(yearlyPlan)
+const field = usePlant()
 
-console.log("here is the plan:", yearlyPlan)
+console.log(field)
