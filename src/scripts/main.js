@@ -7,17 +7,10 @@ import {createSunflower} from "./seeds/sunflower.js"
 import {createWheat} from "./seeds/wheat.js"
 import {addPlant} from "./field.js"
 import {usePlant} from "./field.js"
+import { plantSeeds } from "./tractor.js"
 
-const potatoSeed = createPotato()
 const yearlyPlan = createPlan();
-const soybean = createSoybean()
-const corn = createCorn()
+plantSeeds(yearlyPlan)
+const field = usePlant()
 
-addPlant(potatoSeed);
-addPlant(soybean)
-addPlant(corn)
-const currentField = usePlant()
-
-const testing = Array.isArray(corn);
-console.log(currentField)
-console.log(testing)
+console.log(field)
