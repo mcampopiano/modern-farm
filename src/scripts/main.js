@@ -8,16 +8,6 @@ import {createWheat} from "./seeds/wheat.js"
 import {addPlant} from "./field.js"
 import {usePlant} from "./field.js"
 
-const potatoSeed = createPotato()
 const yearlyPlan = createPlan();
-const soybean = createSoybean()
-const corn = createCorn()
 
-addPlant(potatoSeed);
-addPlant(soybean)
-addPlant(corn)
-const currentField = usePlant()
-
-const testing = Array.isArray(corn);
-console.log(currentField)
-console.log(testing)
+console.log("here is the plan:", yearlyPlan)
