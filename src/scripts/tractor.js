@@ -19,7 +19,8 @@ export const plantSeeds = (annualPlan) => {
                 addPlant(asparagusSeed)
             } else if (plant === "Corn") {
                 const cornSeed = createCorn()
-                addPlant(cornSeed)
+                cornSeed.forEach((corn) => addPlant(corn))
+                // addPlant(cornSeed)
             } else if (plant === "Potato") {
                 const potatoSeed = createPotato()
                 addPlant(potatoSeed)
