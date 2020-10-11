@@ -12,23 +12,23 @@ export const plantSeeds = (annualPlan) => {
     for (const row of annualPlan) {
         for (const plant of row ) {
             if (plant === "Wheat") {
-                const wheatSeed = createWheat()
-                addPlant(wheatSeed)
+                // const wheatSeed = createWheat()
+                addPlant(createWheat())
             } else if (plant === "Asparagus") {
-                const asparagusSeed = createAsparagus()
-                addPlant(asparagusSeed)
+                // const asparagusSeed = createAsparagus()
+                addPlant(createAsparagus())
             } else if (plant === "Corn") {
-                const cornSeed = createCorn()
-                addPlant(cornSeed)
+                // const cornSeed = createCorn()
+                addPlant(createCorn())
             } else if (plant === "Potato") {
-                const potatoSeed = createPotato()
-                addPlant(potatoSeed)
+                // const potatoSeed = createPotato()
+                addPlant(createPotato())
             } else if (plant === "Soybean") {
-                const soybeanSeed = createSoybean()
-                addPlant(soybeanSeed)
+                // const soybeanSeed = createSoybean()
+                addPlant(createSoybean())
             } else if (plant === "Sunflower") {
-                const sunflowerSeed = createSunflower()
-                addPlant(sunflowerSeed)
+                // const sunflowerSeed = createSunflower()
+                addPlant(createSunflower())
             }
         }
     }
