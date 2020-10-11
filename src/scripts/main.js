@@ -5,6 +5,7 @@ import { harvestPlants } from "./harvester.js";
 import { Catalog } from "./catalog.js";
 
 const yearlyPlan = createPlan();
+console.log(yearlyPlan)
 plantSeeds(yearlyPlan)
 const field = usePlant()
 console.log(field)
