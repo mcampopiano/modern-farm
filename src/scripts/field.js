@@ -4,6 +4,6 @@ export const addPlant = (seedObj) => {
      return field.push(seedObj)
     }
 
-export const usePlant = () => {
+export const usePlants = () => {
     return field.slice()
 }
